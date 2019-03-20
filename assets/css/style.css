@@ -1,0 +1,12 @@
+.bg {
+    /*Controls Background Element*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: center;
+
+    /*Height*/
+
+    height: 100%;
+    
+}
