@@ -79,6 +79,7 @@ var pick;
 var index;
 var newArray = [];
 var holder = [];
+var audio = $("#friends");
 
 
 $("#reset").hide();
@@ -86,6 +87,7 @@ $("#reset").hide();
 // Used to start the game
 $("#start").on("click", function () {
     $("#start").hide();
+    startMusic();
     displayQuestion();
     startTimer();
     for (var i = 0; i < questions.length; i++) {
@@ -217,6 +219,12 @@ $("#reset").on("click", function() {
     startTimer();
     displayQuestion();
 })
+
+// use to loop music
+function startMusic() {
+   document.getElementById("friends").play();
+
+}    
 
 
 })
